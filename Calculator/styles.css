@@ -1,0 +1,141 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .calculator {
+    background: #0f172a;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+ 
+  .display input {
+    width: 100%;
+    height: 60px;
+    background: #1e293b;
+    border: none;
+    border-radius: 8px;
+    text-align: right;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px 0px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+ 
+  .buttons {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+  }
+  
+
+  .base,
+  .special-functions,
+  .trigonometry,
+  .middle,
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .trigonometry{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .special-functions{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .middle {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .numbers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  button {
+    background: #334155;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+ 
+  button:hover {
+    background: #475569;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background: #1e293b;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .base-btn {
+    font-size: 1rem;
+  }
+  
+  .middle-btn.clear {
+    background: #f43f5e;
+  }
+  
+  .middle-btn.clear:hover {
+    background: #e11d48;
+  }
+  
+  .middle-btn.delete {
+    background: #facc15;
+    color: #000;
+  }
+  
+  .middle-btn.delete:hover {
+    background: #eab308;
+  }
+  
+  .base-btn.equals {
+    background: #10b981;
+  }
+  
+  .base-btn.equals:hover {
+    background: #059669;
+  }
+  
+ 
+  .special-functions button,
+  .trigonometry button {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .display input {
+      font-size: 1.2rem;
+      height: 50px;
+    }
+  
+    button {
+      height: 45px;
+      font-size: 1rem;
+    }
+  }
+  

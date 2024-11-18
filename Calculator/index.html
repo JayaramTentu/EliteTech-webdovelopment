@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+
+    <div class="display">
+      <input type="text" id="calculator-display" readonly placeholder="0">
+    </div>
+
+    <div class="buttons">
+      
+      <div class="special-functions">
+        <button onclick="calculatePercentage()">%</button>
+        <button onclick="calculateSquareRoot()">√</button>
+        <button onclick="calculateSquare()">x²</button>
+        <button onclick="calculateFactorial()">x!</button>
+        <button onclick="calculateLog()">log</button>
+       
+    </div>
+      <div class="trigonometry">
+        <button onclick="calculateSin()">sin</button>
+        <button onclick="calculateCos()">cos</button>
+        <button onclick="calculateTan()">tan</button>
+      </div>
+     
+      <div class="middle">
+        <button onclick="clearDisplay()" class="middle-btn clear">C</button>
+        <button onclick="deleteLast()" class="middle-btn delete">DEL</button>
+        <button onclick="appendOperator('/')">÷</button>
+      </div>
+      
+      <div class="numbers">
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('*')">x</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('-')">-</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('+')">+</button>
+        
+      </div>
+      <div class="base">
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button onclick="calculateResult()" class="base-btn equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
